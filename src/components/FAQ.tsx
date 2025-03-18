@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { faqs } from '../constant/Index'
 import { FaPlus, FaMinus } from 'react-icons/fa'
 
-const FAQ = () => {
+const FAQ:React.FC = () => {
     const [accordions, setAccordions] = useState<boolean[]>([false, false, false])
 
     const handleToggle =(index:number)=>{
