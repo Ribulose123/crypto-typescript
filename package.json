@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
+    "@react-three/rapier": "^2.0.0",
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.6",
     "antd": "^5.24.1",
@@ -23,7 +24,8 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.5",
     "react-three": "^0.9.7",
-    "tailwindcss": "^4.0.6"
+    "tailwindcss": "^4.0.6",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
