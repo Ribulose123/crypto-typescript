@@ -6,7 +6,7 @@ const CryptoInfo: React.FC = () => {
 
   return (
     <div className="text-center mt-10">
-      <div className="flex items-center justify-center gap-6">
+      <div className=" ">
         <Scene />
         <button
           onClick={() => setShowContent(!showContent)}

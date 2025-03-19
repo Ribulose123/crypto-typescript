@@ -5,12 +5,12 @@ import Character from "./Character";
 
 const Scene: React.FC = () => {
   return (
-    <Canvas camera={{ position: [0, 2, 5] }}>
+    <Canvas camera={{ position: [0, 0, 0] }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} />
       
       {/* 3D Character - Now correctly passing props */}
-      <Character scale={3} position={[-1.5, -2, 0]} />
+      <Character scale={3} position={[-0, -2, 0]} />
 
       <OrbitControls />
     </Canvas>

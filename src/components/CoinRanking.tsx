@@ -66,12 +66,12 @@ const CoinRanking: React.FC = () => {
       </div>
 
       {/* Crypto Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {cryptos.slice(0, 10).map((coin) => (
           <Link
             to={`/coins/${coin.uuid}`}
             key={coin.uuid}
-            className="flex items-center bg-gray-800 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105"
+            className="p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition w-full aspect-square flex flex-col justify-between"
           >
             {/* Crypto Icon */}
             <img
