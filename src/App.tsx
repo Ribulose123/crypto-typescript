@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Coin from "./Pages/Coin"
 import CoinList from "./Pages/CoinList"
 import Blog from "./Pages/Blog"
+import Exchange from "./Pages/Exchange"
 function App() {
  
 
@@ -15,6 +16,7 @@ function App() {
         <Route path ="/coins/:coinId" element={<Coin/>}/>
         <Route path="/coinslist" element={<CoinList/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/exchange" element ={<Exchange/>}/>
       </Routes>
     </div>
 
