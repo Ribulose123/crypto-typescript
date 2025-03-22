@@ -33,7 +33,7 @@ const Navbar = () => {
   }, [isOpen]); */
 
   return (
-    <header className="text-white z-50 bg-black/90">
+    <header className="text-white z-50 bg-gradient-to-b from-purple-900 to-black">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 px-7 sm:px-10">
           <Link to="/">
@@ -61,14 +61,14 @@ const Navbar = () => {
       <div
         className={`nav-container absolute left-0 right-0 overflow-hidden z-20 sm:hidden block ${
           isOpen ? "max-h-screen" : "h-0"
-        } bg-black/90 backdrop-blur-sm duration-300 transition-all ease-in-out mx-auto`}
+        } bg-transparent backdrop-blur-sm duration-300 transition-all ease-in-out mx-auto`}
       >
         <NavItems />
       </div>
 
       {/* Notification Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50 opa">
           <div className="bg-white p-6 rounded-lg shadow-lg text-black">
             <p>No alerts yet</p>
             <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded" onClick={toggleModal}>

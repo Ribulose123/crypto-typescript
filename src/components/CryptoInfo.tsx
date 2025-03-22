@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Scene from "./Scene"; // Ensure Scene is correctly imported
+/* import Scene from "./Scene"; */ // Ensure Scene is correctly imported
 
 const CryptoInfo: React.FC = () => {
   const [showContent, setShowContent] = useState(false);
@@ -7,7 +7,7 @@ const CryptoInfo: React.FC = () => {
   return (
     <div className="text-center mt-10">
       <div className=" ">
-        <Scene />
+       {/*  <Scene /> */}
         <button
           onClick={() => setShowContent(!showContent)}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-110"
