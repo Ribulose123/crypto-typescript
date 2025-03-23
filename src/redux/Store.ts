@@ -2,13 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import { cryptoApi } from "./CyptoCoin";
 import { googleNewsApi } from "./Blogredux";
 import exchangeSlice from './ExchangeSclice'
+import nftReducer from './NftSlice'
 
 const store = configureStore({
     reducer:{
         [cryptoApi.reducerPath]:cryptoApi.reducer,
         [googleNewsApi.reducerPath]:googleNewsApi.reducer,
-        exchange: exchangeSlice
-        
+        exchange: exchangeSlice,
+        nft: nftReducer
     },
     
 

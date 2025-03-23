@@ -38,7 +38,7 @@ const CoinList:React.FC = () => {
       if (!coins?.data?.coins)
         return <p className="text-center text-gray-400">No data available</p>;
   return (
-    <div className="relative min-h-screen bg-black text-white px-6">
+    <div className="relative min-h-screen bg-gradient-to-b from-purple-900 to-black text-white px-6">
     {/* Search Input */}
     <div className="max-w-4xl mx-auto my-6">
       <input
@@ -54,7 +54,7 @@ const CoinList:React.FC = () => {
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {cryptos.slice(0, 30).map((coin) => (
           <Link key={coin.uuid} to={`/coins/${coin.uuid}`}>
-            <div className="p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition w-full aspect-square flex flex-col justify-between">
+            <div className="p-4 bg-gray-300/10 backdrop-blur-lg rounded-lg shadow-md  transition w-full aspect-square flex flex-col justify-between">
               {/* Header (Rank, Name, Icon) */}
               <div className="flex items-center justify-between border-b w-full p-2">
                 <p className="text-lg font-semibold">

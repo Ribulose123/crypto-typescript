@@ -12,14 +12,14 @@ const FAQ:React.FC = () => {
     }
   return (
     <div>
-      <div className="bg-black text-white py-16 px-6">
+      <div className=" text-white py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-center">Frequently Asked Questions</h2>
         <div className="mt-8 space-y-6">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-700 pb-4">
              <div className='flex justify-between'>
-             <h3 className="text-xl font-semibold text-purple-400">{faq.question}</h3>
+             <h3 className="text-xl font-semibold ">{faq.question}</h3>
              <button onClick={()=>handleToggle(index)}>
                 {accordions[index] ? <FaMinus/> : <FaPlus/>}
              </button>

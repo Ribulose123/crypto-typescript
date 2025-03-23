@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 {/* Features Section */}
 <section className="py-16 px-6 rounded-xl mx-4">
   <h2 className="text-3xl font-bold text-center mb-8 text-white">CryptoCap Amazing Features</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
     {[
       { name: "Manage Portfolio", icon: <TbCircleLetterC size={50} />, desc: "Stay ahead with the latest market trends and price movements." },
       { name: "Protected Securely", icon: <AiOutlineSafetyCertificate size={50} />, desc: "Use our AI algorithms to predict market trends and optimize investments." },
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-gray-300 dark:bg-gray-800 text-black dark:text-white text-center py-6 mt-10">
+      <footer className=" text-black dark:text-white text-center py-6 mt-10">
         <p>&copy; {new Date().getFullYear()} Crypto Financial Solutions. All rights reserved.</p>
       </footer>
     </section>

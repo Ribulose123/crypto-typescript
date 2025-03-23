@@ -44,9 +44,9 @@ const Exchange: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-5">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-purple-900 to-black text-white p-5">
       <h1 className="text-3xl font-bold mb-5">Crypto Exchange</h1>
-      <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+      <div className="bg-gray-100/10 backdrop-blur-lg p-6 rounded-lg shadow-lg w-full max-w-md">
         <CryptoDropdown
           lable="From"
           value={fromCurrency}
